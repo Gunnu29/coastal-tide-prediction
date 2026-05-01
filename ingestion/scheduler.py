@@ -244,7 +244,7 @@ async def main():
     await create_tables()
     await startup_backfill()
     
-    scheduler = AsyncIOScheduler()
+    scheduler = AsyncIOScheduler(timezone=timezone.utc)
     scheduler.add_job(hourly_fetch, "interval", hours=1, id="hourly_fetch")
     scheduler.add_job(invalidate_forecast_cache, "interval", hours=6, id="cache_invalidate")
     scheduler.start()

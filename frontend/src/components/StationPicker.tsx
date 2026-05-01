@@ -39,13 +39,16 @@ export default function StationPicker({ onSelect, selectedId }: StationPickerPro
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
-      {data.features.map((feature) => {
-        const { station_id, name, state, lat, lon } = feature.properties;
+      {data.features.filter((feature) => {
+        const coords = feature.geometry?.coordinates;
+        return coords && coords[0] != null && !isNaN(coords[0]) && coords[1] != null && !isNaN(coords[1]);
+      }).map((feature) => {
+        const { station_id, name, state } = feature.properties;
         const isSelected = selectedId === station_id;
         return (
           <CircleMarker
             key={station_id}
-            center={[lat, lon]}
+            center={[feature.geometry.coordinates[1], feature.geometry.coordinates[0]]}
             radius={6}
             pathOptions={{
               color: isSelected ? '#2563eb' : '#64748b',
