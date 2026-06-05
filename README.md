@@ -24,7 +24,7 @@ A full-stack application that predicts water levels across 15 US coastal NOAA st
 ---
 
 ## Live Demo
-- Frontend: https://project-eg27g.vercel.app
+- Frontend: https://coastal-tide-predictor.vercel.app/
 - API: https://coastal-tide-api.onrender.com/docs
 
 ---
