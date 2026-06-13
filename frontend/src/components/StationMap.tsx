@@ -17,7 +17,7 @@ export default function StationMap({ stations, selectedStationId, onSelect }: St
     if (!window.mapboxgl) return;
     
     // @ts-ignore
-    window.mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_TOKEN || 'pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4M29iazA2Z2gycXA4N2pmbDZmangifQ.-g_vE53SD2WrX6tCrB12ww';
+    window.mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_TOKEN || 'YOUR_MAPBOX_TOKEN';
 
     if (mapContainer.current && !mapRef.current) {
       // @ts-ignore
