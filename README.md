@@ -443,9 +443,9 @@ Contributions welcome! Please:
 
 ## 📧 Contact
 
-**Jayesh** - [@jayesh037](https://github.com/jayesh037)
+**Garvita** - [@Gunnu29](https://github.com/Gunnu29)
 
-Project Link: [https://github.com/jayesh037/coastal-tide-predictor](https://github.com/jayesh037/coastal-tide-predictor)
+Project Link: [https://github.com/Gunnu29/coastal-tide-prediction](https://github.com/Gunnu29/coastal-tide-prediction)
 
 ---
 
@@ -456,7 +456,4 @@ Project Link: [https://github.com/jayesh037/coastal-tide-predictor](https://gith
 - Lightning AI for training framework
 - Original TFT paper: [Temporal Fusion Transformers for Interpretable Multi-horizon Time Series Forecasting](https://arxiv.org/abs/1912.09363)
 
----
 
-**Last Updated**: May 28, 2026  
-**Status**: ✅ Production Ready
